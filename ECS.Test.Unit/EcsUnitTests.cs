@@ -21,7 +21,8 @@ namespace ECS.Test.Unit
             _fakeTempSensor = new FakeTempSensor();
             _fakeWindow = new FakeWindow();
             // Inject them into the uut via the constructor
-            _uut = new ECS(_fakeTempSensor, _fakeHeater, _fakeWindow, 25, 28);
+            _uut = new ECS(_fakeTempSensor, _fakeHeater, _fakeWindow,
+                25, 28);
         }
 
         #region Threshold tests
